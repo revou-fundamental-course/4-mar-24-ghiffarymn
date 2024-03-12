@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/output.css">
+    <script src="/src/script.js"></script>
+</head>
+<body>
+    <div class="mt-40 mb-10">
+        <div class="bg-transparent">
+            <h1 class="font-sans text-center text-5xl mt-10 mb-10 text-blue-500 text-stroke-3">BMI Calculator</h1>
+            <form action="" class="flex justify-center flex-col text-center">
+                <div class="block">
+                    <label for="gender">Gender: </label>
+                    
+                    <div class="flex flex-row justify-center">
+                        <div class="m-2">
+                            <input type="radio" id="male" name="gender" value="male" class="border text-gray-600 text-sm font-medium" checked>
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="m-2">
+                            <input type="radio" id="female" name="gender" value="female" class="border text-gra-600 text-sm font-medium">
+                            <label for="female">female</label>
+                        </div>
+                    </div>
+                    
+                </div>
+                    
+                    
+                    
+                </div> 
+                <div class="flex justify-center">
+                    <label for="height">Height (cm): </label>
+                    <input type="number" id="height" name="height" placeholder="Height" class="border text-gray-600 text-sm font-medium mb-2 mx-8 w-40">
+                </div>
+                <div class="flex justify-center">
+                    <label for="weight">Weight (kg): </label>
+                    <input type="number" id="weight" name="weight" placeholder="Weight" class="border text-gray-600 text-sm font-medium mb-2 mx-8 w-40">
+                </div>       
+            </form>    
+        </div>
+        <div class="flex justify-center items-center mt-8">
+            <button onclick="calculateBMI()" id="btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Calculate</button>
+        </div>
+        <div id="result" class="text-center text-gray-500 text-2xl font-normal mt-10">
+        </div>
+    </div>
+    
+</body>
+</html>
